@@ -206,3 +206,18 @@
 	 */
 	new PureCounter();
 })();
+
+/* Remove input elements when submitting form */
+
+form.addEventListener("submit", (e) => {
+	const formInputs = document.querySelectorAll(
+		".form-group input, .form-group textarea"
+	);
+
+	setTimeout(() => {
+		formInputs.forEach((element) => {
+			element.value = "";
+		});
+		document.getElementById("message-sent").classList.remove("d-none");
+	}, 1000);
+});

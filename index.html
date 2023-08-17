@@ -48,7 +48,7 @@
 						src="assets/img/profile-img-main.webp"
 						width="56"
 						height="56"
-						alt=""
+						alt="Profile Photo"
 						class="img-fluid rounded-circle"
 					/>
 					<h1 class="text-light"><a href="index.html">Raazi Muhammed</a></h1>
@@ -144,7 +144,7 @@
 								height="200"
 								src="assets/img/profile-img-main.webp"
 								class="img-fluid rounded-circle"
-								alt=""
+								alt="Profile Picture of Raazi"
 							/>
 						</div>
 						<div class="col-lg-9 pt-4 pt-lg-0 content" data-aos="fade-left">
@@ -322,8 +322,7 @@
 							<img
 								loading="lazy"
 								src="./assets/icons/experience-brotype-logo.webp"
-								alt=""
-								srcset=""
+								alt="Brototype Logo"
 							/>
 							<h3 class="resume-title">Brocamp</h3>
 							<div class="resume-item pb-0">
@@ -341,8 +340,7 @@
 							<img
 								loading="lazy"
 								src="./assets/icons/experience-aimbridge-logo.webp"
-								alt=""
-								srcset=""
+								alt="Aimbridge Education Logo"
 							/>
 							<h3 class="resume-title">Aimbridge Education</h3>
 							<div class="resume-item">
@@ -385,7 +383,7 @@
 					<div class="row">
 						<div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
 							<div class="icon"><i class="bi bi-window"></i></div>
-							<h4 class="title"><a href="">Web Design</a></h4>
+							<h4 class="title"><a href="#">Web Design</a></h4>
 							<p>
 								Mastery in crafting elegant static websites that captivate
 								users. Delivering seamless design with responsive layouts,
@@ -398,7 +396,7 @@
 							data-aos-delay="100"
 						>
 							<div class="icon"><i class="bi bi-tools"></i></div>
-							<h4 class="title"><a href="">Graphic Design</a></h4>
+							<h4 class="title"><a href="#">Graphic Design</a></h4>
 							<p>
 								Graphic design expertise bringing visions to life. Creating
 								impactful visuals that resonate, from logos to print materials,
@@ -412,7 +410,7 @@
 							data-aos-delay="200"
 						>
 							<div class="icon"><i class="bi bi-camera-reels"></i></div>
-							<h4 class="title"><a href="">Video Editing</a></h4>
+							<h4 class="title"><a href="#">Video Editing</a></h4>
 							<p>
 								Proficient video editing. Transforming raw footage into
 								captivating stories with seamless cuts, transitions, and
@@ -447,7 +445,7 @@
 										<h4>Books i've loved</h4>
 										<ul>
 											<li><p>Atomic habits</p></li>
-											<li><p>Rich Dad Poor Dad</p></li>
+											<li><p>Moonwalking with Einsten</p></li>
 										</ul>
 									</div>
 								</div>
@@ -512,7 +510,7 @@
 									height="100"
 									width="100"
 									src="./assets/icons/social-instagram.webp"
-									alt=""
+									alt="instagram logo"
 								/>
 								<p><strong>Instagram</strong></p>
 								<a
@@ -534,7 +532,7 @@
 									height="100"
 									width="100"
 									src="./assets/icons/social-linkedin.webp"
-									alt=""
+									alt="linkedin logo"
 								/>
 								<p><strong>Linkedin</strong></p>
 								<a
@@ -556,7 +554,7 @@
 									height="100"
 									width="100"
 									src="./assets/icons/social-git.webp"
-									alt=""
+									alt="github logo"
 								/>
 								<p><strong>GitHub</strong></p>
 								<a href="https://github.com/raazi-muhammed" target="_blank"
@@ -576,7 +574,7 @@
 									height="100"
 									width="100"
 									src="./assets/icons/social-yt.webp"
-									alt=""
+									alt="youtube logo"
 								/>
 								<p><strong>YouTube</strong></p>
 								<a href="https://www.youtube.com/@RaaziMedia" target="_blank"
@@ -602,18 +600,26 @@
 								<ul>
 									<li>
 										<i class="bi bi-telephone"></i>
-										<p>Phone</p>
-										<a>+91 9383455508</a>
+										<div>
+											<p>Phone</p>
+											<a href="tel:+919383455508">+91 9383455508</a>
+										</div>
 									</li>
 									<li>
 										<i class="bi bi-geo-alt"></i>
-										<p>City</p>
-										<a>Malapura, Kerala</a>
+										<div>
+											<p>City</p>
+											<a href="https://g.co/kgs/deVUjw">Malapura, Kerala</a>
+										</div>
 									</li>
 									<li>
 										<i class="bi bi-envelope"></i>
-										<p>Mail id</p>
-										<a>raazi6163@gmail.com</a>
+										<div>
+											<p>Mail id</p>
+											<a href="mailto:raazi6163@gmail.com"
+												>raazi6163@gmail.com</a
+											>
+										</div>
 									</li>
 								</ul>
 							</div>
@@ -621,7 +627,7 @@
 
 						<div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
 							<form name="submit-to-google-sheet" action="" role="form">
-								<!-- class="php-email-form" -->
+								<!-- class="email-form" -->
 								<div class="row">
 									<div class="form-group col-md-6">
 										<label name="name" for="name">Your Name</label>
@@ -665,7 +671,16 @@
 									></textarea>
 								</div>
 								<div class="text-center">
-									<button type="submit">Send Message</button>
+									<p
+										id="message-sent"
+										class="text-success d-none"
+										data-aos="fade-right"
+									>
+										Message Sent
+									</p>
+									<button type="submit" id="submitButtonOnFrom">
+										Send Message
+									</button>
 								</div>
 							</form>
 						</div>

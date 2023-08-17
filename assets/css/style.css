@@ -791,8 +791,21 @@ section {
 }
 
 .contact .info ul li {
-	margin-bottom: 20px;
+	margin-bottom: 1.5rem;
+	display: flex;
 	align-items: center;
+}
+
+.contact .info ul li p {
+	margin-bottom: 0;
+}
+.contact .info ul li a {
+	margin-bottom: 0;
+}
+
+.contact .info ul li a:hover {
+	text-decoration: underline;
+	color: var(--COLOR-ACCENT);
 }
 
 .contact .info ul li:hover i {
@@ -815,6 +828,7 @@ section {
 	padding: 0.5rem;
 	border-radius: 5rem;
 	transition: 0.3s;
+	padding: auto 0;
 }
 
 .contact .php-email-form {
